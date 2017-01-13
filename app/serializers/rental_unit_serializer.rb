@@ -3,6 +3,11 @@ class RentalUnitSerializer < ActiveModel::Serializer
     :id,
     :address,
     :rooms,
-    :bathrooms
+    :bathrooms,
+    # :price_cents,
+    :price,
+    :price_per_room
   )
+
+  belongs_to :user
 end
